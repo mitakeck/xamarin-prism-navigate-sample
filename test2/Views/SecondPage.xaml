@@ -8,6 +8,6 @@
 	Title="SecondPage">
 
 	<StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-		<Label Text="This is second page."></Label>
+		<Label Text="{Binding Message}"></Label>
 	</StackLayout>
 </ContentPage>

@@ -20,7 +20,9 @@ namespace test2.ViewModels
 
 		private void NavigateNext()
 		{
-			_navigationService.NavigateAsync("SecondPage");
+			NavigationParameters parameter = new NavigationParameters();
+			parameter.Add("message", "go to second page");
+			_navigationService.NavigateAsync("SecondPage", parameter);
 		}
 
 		public MainPageViewModel(INavigationService navigationService)
