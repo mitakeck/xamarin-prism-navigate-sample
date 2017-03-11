@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
+	prism:ViewModelLocator.AutowireViewModel="True" 
+	x:Class="test2.Views.SecondPage" 
+	Title="SecondPage">
+
+	<StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
+		<Label Text="This is second page."></Label>
+	</StackLayout>
+</ContentPage>
