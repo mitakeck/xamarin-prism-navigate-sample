@@ -7,7 +7,11 @@
 	x:Class="test2.Views.SecondPage" 
 	Title="SecondPage">
 
-	<StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" >
-		<Label Text="{Binding Message}"></Label>
-	</StackLayout>
+	<ListView ItemsSource="{Binding EmployeeList}" ItemSelected="EmployeeList_ItemSelected">
+		<ListView.ItemTemplate>
+			<DataTemplate>
+				<TextCell Text="{Binding DisplayName}" />
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
 </ContentPage>
