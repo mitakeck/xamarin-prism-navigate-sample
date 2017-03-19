@@ -7,10 +7,21 @@
 	x:Class="test2.Views.SecondPage" 
 	Title="SecondPage">
 
-	<ListView ItemsSource="{Binding EmployeeList}" ItemSelected="EmployeeList_ItemSelected">
+	<ListView 
+		ItemsSource="{Binding EmployeeList}" 
+		ItemSelected="EmployeeList_ItemSelected" 
+		HasUnevenRows="true"
+		IsPullToRefreshEnabled="true">
 		<ListView.ItemTemplate>
 			<DataTemplate>
-				<TextCell Text="{Binding DisplayName}" />
+				<ViewCell>
+					<StackLayout Orientation="Vertical">
+						<StackLayout Orientation="Horizontal">
+							<Image Source="{Binding ImageURL}" Aspect="Fill" />
+							<Label Text="{Binding DisplayName}" />
+						</StackLayout>
+					</StackLayout>
+				</ViewCell>
 			</DataTemplate>
 		</ListView.ItemTemplate>
 	</ListView>

@@ -1,7 +1,8 @@
 ﻿namespace test2.ViewModels
 {
-	public class Employee
+	public class BookEmployee
 	{
 		public string DisplayName { get; set; }
+		public string ImageURL { get; set; }
 	}
 }
